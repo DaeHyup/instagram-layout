@@ -5,24 +5,30 @@ import SendOutlinedIcon from '@material-ui/icons/SendOutlined';
 import ExploreOutlinedIcon from '@material-ui/icons/ExploreOutlined';
 import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutlined';
 import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
-import { Headersection, Headerleft } from './Header.style';
+import {
+  Headersection,
+  Headerleft,
+  Headermiddle,
+  Headermiddleinput,
+  Headerright,
+} from './Header.style';
 
 function Header() {
   return (
     <Headersection>
       <Headerleft>Instagram</Headerleft>
-      <div className="header__middle">
-        <input type="text" />
-        <SearchIcon />
+      <Headermiddle>
+        <Headermiddleinput type="text" />
+        <SearchIcon style={{ fontSize: 13 }} />
         검색
-      </div>
-      <div className="header__right">
+      </Headermiddle>
+      <Headerright>
         <HomeOutlinedIcon />
         <SendOutlinedIcon />
         <ExploreOutlinedIcon />
         <FavoriteBorderOutlinedIcon />
         <AccountCircleOutlinedIcon />
-      </div>
+      </Headerright>
     </Headersection>
   );
 }

@@ -1,11 +1,12 @@
-import './App.css';
 import Header from './components/structure/Header/Header';
+import Storyboard from './components/structure/Storyboard/Storyboard';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
-    </div>
+      <Storyboard />
+    </>
   );
 }
 
