@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+}
+
+.imglist {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.imglist > img {
+  width: 63px;
+  display: flex;
+  border: 2px solid tomato;
+  border-radius: 30px;
+}

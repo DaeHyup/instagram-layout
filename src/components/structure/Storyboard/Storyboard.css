@@ -1,0 +1,7 @@
+.storylist {
+  width: 690px;
+  display: flex;
+  text-align: center;
+  margin: 50px 440px;
+  border: 1px solid lightgray;
+}
