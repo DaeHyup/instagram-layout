@@ -1,9 +1,47 @@
+.feed {
+  margin-left: 439px;
+  background-color: #ffffff;
+  width: 696px;
+}
+
 .feedtop {
   display: flex;
+  border: 1px solid lightgray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 693px;
+  align-items: center;
 }
 
 .feedtop > img {
   width: 40px;
   border: 1px solid tomato;
   border-radius: 20px;
+  margin-left: 15px;
+}
+
+.feedtop > p {
+  align-items: center;
+  margin-left: 14px;
+  margin-right: 550px;
+  font-weight: bold;
+}
+
+.imageunder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imageunderleft {
+  margin-left: 10px;
+  letter-spacing: 10px;
+}
+
+.imageunderright {
+  margin-right: 10px;
+}
+
+.favorite {
+  position: absolute;
+  left: 30px;
 }
