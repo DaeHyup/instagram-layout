@@ -8,8 +8,11 @@ import { makeStyles } from '@material-ui/core/styles';
 import './Mainfeed.css';
 
 const useStyles = makeStyles({
-  buttonstyle: {
-    color: 'red',
+  heart: {
+    marginRight: '15px',
+  },
+  chat: {
+    marginRight: '15px',
   },
 });
 
@@ -33,12 +36,22 @@ function Mainfeed() {
       </div>
       <div className="imageunder">
         <div className="imageunderleft">
-          <FavoriteBorderIcon className={classes.buttonstyle} />
-          <ChatBubbleOutlineIcon />
+          <FavoriteBorderIcon className={classes.heart} />
+          <ChatBubbleOutlineIcon className={classes.chat} />
           <SendIcon />
         </div>
         <div className="imageunderright">
           <TurnedInNotIcon />
+        </div>
+      </div>
+      <div className="feedcomment">
+        <div className="feedcommentlike">
+          <strong>좋아요 1,000개</strong>
+        </div>
+        <div className="feedcommentsentence">
+          <strong>hyup</strong>
+          <p>nice meet you</p> ... <p className="moresentence">더 보기</p>
+          <span className="nummoresentence">댓글 10개 모두 보기</span>
         </div>
       </div>
     </div>

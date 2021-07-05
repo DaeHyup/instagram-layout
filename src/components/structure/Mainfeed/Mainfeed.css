@@ -45,3 +45,29 @@
   position: absolute;
   left: 30px;
 }
+
+.feedcomment {
+  margin-left: 12px;
+}
+
+.feedcommentlike {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.feedcommentsentence {
+  display: flex;
+}
+
+.feedcommentsentence .moresentence {
+  color: #8e8e8e;
+  margin-left: 2px;
+}
+
+.feedcommentsentence > strong {
+  margin-right: 10px;
+}
+
+.nummoresentence {
+  color: #8e8e8e;
+}
