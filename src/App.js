@@ -2,6 +2,7 @@ import Header from './components/structure/Header/Header';
 import Storyboard from './components/structure/Storyboard/Storyboard';
 import Mainfeed from './components/structure/Mainfeed/Mainfeed';
 import './App.css';
+import Sidebar from './components/structure/Sidebar/Sidebar';
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
           <Storyboard />
           <Mainfeed />
         </div>
-        <div className="sidebar">{/* sidebar */}ss</div>
+        <div className="sidebar">
+          <Sidebar />
+        </div>
       </div>
     </>
   );
