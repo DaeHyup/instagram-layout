@@ -27,7 +27,11 @@ function Mainfeed() {
             alt="logo"
           />
           <p>hyup</p>
-          <MoreHorizIcon />
+          <MoreHorizIcon
+            onClick={() => {
+              console.log('onClick');
+            }}
+          />
         </div>
         <div className="feedimg">
           <img

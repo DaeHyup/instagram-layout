@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 export const Headersection = styled.div`
+  position: fixed;
   height: 50px;
   width: 1989px;
   border-bottom: 1px solid lightgray;
   display: flex;
+  background-color: white;
   justify-content: space-evenly;
   text-align: center;
   align-items: center;

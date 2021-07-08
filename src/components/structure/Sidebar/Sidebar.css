@@ -1,20 +1,102 @@
 .sidebar {
+  position: fixed;
+  top: 118px;
+  right: 235px;
   width: 500px;
-  background-color: violet;
+  height: 500px;
 }
 
 .mynick {
-  border-bottom: 1px solid black;
+  display: flex;
 }
 
 .mynick > img {
-  width: 50px;
+  width: 60px;
   border: 1px solid tomato;
-  border-radius: 25px;
+  border-radius: 30px;
+  margin-right: 15px;
+}
+
+.colornickname,
+.notcolornickname {
+  margin-top: 10px;
+  margin-left: 8px;
+}
+
+.colornickname {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.notcolornickname {
+  position: absolute;
+  top: 23px;
+  left: 77px;
+  color: lightgray;
+}
+
+.exchange {
+  margin-left: 147px;
+  margin-top: 20px;
+  color: blue;
+  font-size: 13px;
+}
+
+.sidebarothernicklist {
+  margin-top: 40px;
+}
+
+.recommend {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.recommend > span {
+  margin-right: 142px;
+  font-size: 13px;
+}
+
+.recommend .color {
+  color: blue;
+  font-size: 13px;
+}
+
+.othernick {
+  display: flex;
 }
 
 .othernick > img {
-  width: 50px;
+  width: 40px;
   border: 1px solid tomato;
-  border-radius: 25px;
+  border-radius: 20px;
+}
+
+.othermynick,
+.otherfollownumber,
+.otherfollow {
+  margin-top: 3px;
+  margin-left: 15px;
+}
+
+.othermynick,
+.otherfollownumber {
+  font-size: 12px;
+}
+
+.othermynick {
+  font-weight: bold;
+}
+
+.otherfollownumber {
+  position: absolute;
+  top: 170px;
+  left: 42px;
+  color: lightgray;
+}
+
+.otherfollow {
+  margin-left: 180px;
+  color: blue;
+  font-size: 13px;
+  margin-top: 9px;
 }
