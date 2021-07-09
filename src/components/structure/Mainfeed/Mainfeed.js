@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
@@ -6,6 +6,7 @@ import SendIcon from '@material-ui/icons/Send';
 import TurnedInNotIcon from '@material-ui/icons/TurnedInNot';
 import { makeStyles } from '@material-ui/core/styles';
 import './Mainfeed.css';
+import Modal from '../Modal/Modal';
 
 const useStyles = makeStyles({
   heart: {
@@ -14,10 +15,22 @@ const useStyles = makeStyles({
   chat: {
     marginRight: '15px',
   },
+  horiz: {
+    cursor: 'pointer',
+  },
 });
 
 function Mainfeed() {
   const classes = useStyles();
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
   return (
     <>
       <div className="feed">
@@ -27,11 +40,12 @@ function Mainfeed() {
             alt="logo"
           />
           <p>hyup</p>
-          <MoreHorizIcon
-            onClick={() => {
-              console.log('onClick');
-            }}
-          />
+          <MoreHorizIcon className={classes.horiz} onClick={openModal} />
+          <Modal
+            open={modalOpen}
+            close={closeModal}
+            header="Modal heading"
+          ></Modal>
         </div>
         <div className="feedimg">
           <img
